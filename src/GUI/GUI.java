@@ -57,8 +57,10 @@ public class GUI {
                     break;
                 case 2:
                     System.out.println("Pulsa ENTER para continuar");
+                   
                     teclado.nextLine();
                     Lista_Compra li = new Lista_Compra();
+                     System.out.println(li);
                     
                     System.out.println("Introduce el nombre para añadir un producto");
                     String nombreProdu = teclado.nextLine();

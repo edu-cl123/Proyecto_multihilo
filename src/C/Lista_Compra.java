@@ -6,6 +6,7 @@ import java.util.List;
 //una lista de compra con array de productos
 public class Lista_Compra {
 
+    //Array para añadir productos, Añado algunos en el contructor
     List<Producto> lista;
 
     public Lista_Compra() {
@@ -29,6 +30,11 @@ public class Lista_Compra {
         return "Lista_Compra{" + "lista=" + lista + '}';
     }
 
+    /**
+     * Recibimos un producto para añadirlo a la lista en caso de que no lo 
+     * contenga
+     * @param p Producto para comprobar
+     */
     synchronized public void añadirProducto(Producto p) {
 
         if (lista.contains(p)==false) {
@@ -38,7 +44,11 @@ public class Lista_Compra {
             System.out.println("Producto ya añadido");
         }
     }
-
+/**
+     * Recibimos un producto para Eliminarlo de la lista en caso de que lo 
+     * contenga
+     * @param p Producto para comprobar
+     */
     synchronized public void EliminarProducto(String p) {
         Producto aux = new Producto(p);
 

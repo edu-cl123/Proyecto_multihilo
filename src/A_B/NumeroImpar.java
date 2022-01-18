@@ -9,7 +9,10 @@ public class NumeroImpar extends Thread {
         this.l = l;
         this.nombre = nombre;
     }
-
+    
+    /**
+     * Metodo Run para ejecutar un hilo para poder enumerar los numeros impares
+     */
     @Override
     public void run() {
         try {

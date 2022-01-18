@@ -12,6 +12,9 @@ public class NumeroPar extends Thread {
         this.nombre = nombre;
     }
 
+    /**
+     * Metodo Run para ejecutar un hilo para poder enumerar los numeros impares
+     */
     @Override
     public void run() {
         try {

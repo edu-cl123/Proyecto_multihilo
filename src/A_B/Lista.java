@@ -12,6 +12,10 @@ public class Lista {
         return numero;
     }
 
+    /**
+     * Función para sacar los numero impares hasta un numero especifico
+     * @param nombre Nombre del proceso que la va a utilizar
+     */
     public void sacarImpares(String nombre) {
 
         for (int i = 0; i <= numero; i++) {
@@ -22,6 +26,10 @@ public class Lista {
         System.out.println("Fin Bucle " + nombre);
     }
 
+    /**
+     * Función para sacar los numero Pares hasta un numero especifico
+     * @param nombre Nombre del proceso que la va a utilizar
+     */
     public void sacarPares(String nombre) {
         for (int i = 0; i <= numero; i++) {
             if (i % 2 == 0) {
